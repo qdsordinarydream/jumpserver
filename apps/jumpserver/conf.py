@@ -449,9 +449,9 @@ class Config(dict):
 
         # 钉钉
         'AUTH_DINGTALK': True,
-        'DINGTALK_AGENTID': '',
-        'DINGTALK_APPKEY': '',
-        'DINGTALK_APPSECRET': '',
+        'DINGTALK_AGENTID': '4020067190',
+        'DINGTALK_APPKEY': 'ding3ssxusjy5lm1lfab',
+        'DINGTALK_APPSECRET': 'KH_lAek6gA7suJg7rUUseYBnBhvBtwcJ-pKoqo9DIOYfcEZHYOMQgFl5ywLHU_He',
         'DINGTALK_RENAME_ATTRIBUTES': {
             'name': 'name',
             'username': 'user_id',

@@ -1,0 +1,1 @@
+ docker build -t stridemobi/jumpserver:v1.0 -f Dockerfile .
