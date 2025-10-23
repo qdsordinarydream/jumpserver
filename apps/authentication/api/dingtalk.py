@@ -4,7 +4,7 @@ from rest_framework.response import Response
 
 from users.models import User
 from common.utils import get_logger
-from common.mixins.api import RoleUserMixin, RoleAdminMixin
+from common.api import RoleUserMixin, RoleAdminMixin
 from authentication.permissions import UserConfirmation
 from authentication.const import ConfirmType
 from authentication import errors
@@ -27,7 +27,7 @@ class DingTalkQRUnBindBase(APIView):
 
 
 class DingTalkQRUnBindForUserApi(RoleUserMixin, DingTalkQRUnBindBase):
-    permission_classes = (UserConfirmation.require(ConfirmType.ReLogin),)
+    permission_classes = (UserConfirmation.require(ConfirmType.RELOGIN),)
 
 
 class DingTalkQRUnBindForAdminApi(RoleAdminMixin, DingTalkQRUnBindBase):
