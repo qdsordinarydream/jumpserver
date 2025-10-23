@@ -33,6 +33,9 @@ urlpatterns = [
     path('face-monitor/callback/', api.FaceMonitorCallbackApi.as_view(), name='face-monitor-callback'),
     path('face-monitor/context/', api.FaceMonitorContextApi.as_view(), name='face-monitor-context'),
 
+    path('dingtalk/qr/unbind/', api.DingTalkQRUnBindForUserApi.as_view(), name='dingtalk-qr-unbind'),
+    path('dingtalk/qr/unbind/<uuid:user_id>/', api.DingTalkQRUnBindForAdminApi.as_view(), name='dingtalk-qr-unbind-for-admin'),
+
     path('auth/', api.TokenCreateApi.as_view(), name='user-auth'),
     path('confirm-oauth/', api.ConfirmBindORUNBindOAuth.as_view(), name='confirm-oauth'),
     path('tokens/', api.TokenCreateApi.as_view(), name='auth-token'),

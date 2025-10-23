@@ -448,7 +448,7 @@ class Config(dict):
         'WECOM_ORG_IDS': [DEFAULT_ID],
 
         # 钉钉
-        'AUTH_DINGTALK': False,
+        'AUTH_DINGTALK': True,
         'DINGTALK_AGENTID': '',
         'DINGTALK_APPKEY': '',
         'DINGTALK_APPSECRET': '',
