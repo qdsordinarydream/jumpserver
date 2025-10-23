@@ -216,7 +216,7 @@ class Config(dict):
         'REDIS_DB_WS': 6,
 
         'GLOBAL_ORG_DISPLAY_NAME': '',
-        'SITE_URL': 'http://127.0.0.1',
+        'SITE_URL': 'http://47.236.178.13:3010',
         'USER_GUIDE_URL': '',
         'ANNOUNCEMENT_ENABLED': True,
         'ANNOUNCEMENT': {},
