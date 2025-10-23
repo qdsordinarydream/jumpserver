@@ -13,7 +13,7 @@ class DingTalkSettingSerializer(serializers.Serializer):
     DINGTALK_AGENTID = serializers.CharField(max_length=256, required=True, label='Agent ID')
     DINGTALK_APPKEY = serializers.CharField(max_length=256, required=True, label='App Key')
     DINGTALK_APPSECRET = EncryptedField(max_length=256, required=False, label='App Secret')
-    AUTH_DINGTALK = serializers.BooleanField(default=False, label=_('Dingtalk'))
+    AUTH_DINGTALK = serializers.BooleanField(default=True, label=_('Dingtalk'))
     DINGTALK_RENAME_ATTRIBUTES = serializers.JSONField(
         required=False, label=_('User attribute'),
         help_text=_(
